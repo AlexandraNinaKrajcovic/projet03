@@ -1,0 +1,507 @@
+.page {
+    *{
+        font-family: "Roboto", sans-serif;
+        font-size:16px;
+        margin: 0;
+        padding: 0;
+        line-height: 30px;
+    }
+    font-size: 18px;
+
+    header {
+        width: 100%;
+        text-align: center;
+        .logo {
+            text-align: center;
+        }
+        .ville_header {
+            display: flex;
+            flex-direction: row;
+            border: 1px #E8E8E8 solid;
+            background: #E8E8E8;
+            width: 100%;
+            box-shadow: inset 2px 19px 11px -15px rgba(0, 0, 0, 0.25);
+            align-items: center;
+            justify-content: center;
+            .lieu {
+                margin:0 0 0 20px;
+            }
+            .ville_header--text{
+                padding: 0 0 0 18px;
+                font-family: "Roboto", sans-serif;
+                font-weight: bold;
+                font-size: 16px;
+            }
+        }  
+        nav {
+            border: 1px #F2F2F2 solid;
+            background: #F2F2F2;
+            padding: 16px 0 42px 0;
+            .bouton_explorer {
+                border: 1px #cccbcb solid;
+                border-radius: 50px;
+                box-shadow: 2px 2px 5px gray;
+                width: 230px;
+                height: 60px;
+                background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+                color: white;
+                font-size: 30px;
+                margin-top: 20px;
+                font-size: 18px;
+                transition: all 0.5s ease-out;
+                &:hover{
+                    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+                    background-blend-mode: lighten;
+                    background-color: #b389e7;
+                }
+            }
+            p {
+                color: gray;
+            }
+        }
+    }
+    .content{
+        width: auto;
+    }
+    .fonctionnement {
+        margin: 60px 0 80px 20px;
+        .fonctionnement_bloc {
+            padding-top: 20px;
+            margin: 0 0 0 -10px;
+            .bloc {
+                font-weight: bold;
+                display: flex;
+                flex-direction: row;
+                border: 1px #F2F2F2 solid;
+                border-radius: 20px;
+                box-shadow: 2px 2px 5px gray;
+                background: #F2F2F2;
+                width: 90%;
+                height: 70px;
+                margin: 0 0 40px 20px;
+                /*justify-content: space-around;*/
+                .transformation1, .transformation2, .transformation3 {
+                    border: 1px rgb(147, 86, 220) solid;
+                    border-radius: 20px;
+                    background: rgb(147, 86, 220);
+                    width: 50px;
+                    height: 20px;
+                    color: white;
+                    text-align: center;
+                }
+                .transformation1 {
+                    /*transform: translateX(-43%);*/
+                    position: absolute;
+                    right: 89%;
+                    left: -3%;
+                }
+                .transformation2 {
+                    /*transform: translateX(-43%);*/
+                    position: absolute;
+                    right: 89%;
+                    left: -3%;
+                }
+                .transformation3 {
+                   /* transform: translateX(-43%);*/
+                   position: absolute;
+                   right: 89%;
+                   left: -3%;
+                }
+                .icone {
+                    padding: 10px 20px 10px 10px;
+                }
+                .text {
+                    padding: 8px;
+                   /* white-space: nowrap;*/
+                }
+            .icone {
+                color: gray;
+            }
+            }
+            .bloc:hover {
+                background: rgb(245, 237, 255);
+                .icone {
+                    color: rgb(147, 86, 220);
+                }
+            }
+            .fonctionnement--item{
+                display: flex;
+                flex-direction: row;
+                margin: 0 11rem 0 4rem;
+            }
+        }
+        
+    }
+
+    .restaurants {
+        padding: 10px;
+        h1 {
+            margin-left: 40px;
+        }
+        .menu_bloc {
+            margin: 50px 0 50px 10px;
+            height: 250px;
+            border: 1px transparent solid;
+            border-radius: 30px;
+            box-shadow: 2px 2px 5px gray;
+            font-size: 70%;
+            line-height: 0px;
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            .bloc_nouveau {
+                position: absolute;
+                color: rgb(0, 135, 102);
+                border: 1px rgb(153, 226, 208);
+                border-radius: 5px;
+                background: rgb(153, 226, 208);
+                font-weight: bold;
+                width: 120px;
+                height: 30px;
+                text-align: center;
+                right: 5% ;
+                top: 5%;
+            }
+            img {
+                border-radius: 30px 30px 0 0;
+                width: 100%;
+                height: 170px;
+            }
+            h2 {
+                padding: 10px 0 0 20px;
+            }
+            .info_image {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 0 50px 0 20px;
+                .bloc_coeur {
+                    position: relative;
+                    right: -20px;
+                    cursor: pointer;
+                    color: #818181;
+                    font-size: 25px;
+                    .coeur{
+                        font-size: 30px;
+                    }
+                    
+                }
+            }
+        }
+        .menu_bloc:hover {
+            .bloc_coeur {
+                font-size: 1.9rem;
+            }
+           
+        }
+    }
+
+    .bloc_footer {
+        width: 89%;
+        
+        font-size: 18px;
+        color: white;
+        background: rgb(48, 48, 48);
+        padding: 30px;
+        .footer_logo--text{
+            font-family: "Shrikhand", serif;
+            color: #ffffff;
+        }
+        .text{
+            display: flex;
+            .icone {
+                padding-right: 20px;
+            }
+        }
+    }    
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+    .page {
+        font-size: 20px;
+        header {
+            width: 100%;
+            .logo {
+                text-align: center;
+            }
+            .ville_header {
+                width: 100%;
+                .icone_map {
+                    padding: 0 0px 0 0;
+                }
+            }  
+            nav {
+                .bouton_explorer {
+                    width: 18rem;
+                }
+            }
+        }
+    
+        .fonctionnement {
+            margin: 50px 0 50px 40px;
+            .fonctionnement_bloc {
+                display: flex;
+                flex-direction: row;
+                padding-top: 20px;
+                margin-right: 3px;
+                .bloc {
+                    font-weight: bold;
+                    display: flex;
+                    flex-direction: row;
+                    width: 31%;
+                    height: 80px;
+                    transition: all 0.4s ease-in-out;
+                    .transformation1, .transformation2, .transformation3 {
+                        width: 35px;
+                        height: 35px;
+                    }
+                    .transformation1,.transformation2,.transformation3 {
+                        /*transform: translateX(-42%);*/
+                        position: absolute;
+                        right: 89%;
+                    }
+                    .icone {
+                        padding: 10px 0 10px 10px;
+                    }
+                    .text {
+                        padding: 8px;
+                        white-space: nowrap;
+                    }
+                .icone {
+                    color: gray;
+                }
+                }
+                .bloc:hover {
+                    background: rgb(245, 237, 255);
+                    .icone {
+                        color: rgb(147, 86, 220);
+                    }
+                }
+            }
+            
+        }
+    
+        .restaurants {
+            display: flex;
+            flex-direction: row;
+            height: 400px;
+            h1 {
+                font-size: 20px;
+                margin: 20px 0 10px 20px;
+                position: absolute;
+            }
+            .menu_bloc {
+                margin-top: 70px;
+                margin-right: 25px;
+                width: 350px;
+                height: 270px;
+                .bloc_nouveau {
+                    width: 120px;
+                    height: 30px;
+                }
+                img {
+                    border-radius: 30px 30px 0 0;
+                    width: 100%;
+                    height: 180px;
+                }
+                h2 {
+                    padding: 20px 0 0 30px;
+                }
+                .info_image {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding: 0 50px 0 30px;
+                }
+            }
+            
+        }
+    
+        .bloc_footer {
+            width: 93.40%;
+            font-size: 20px;
+            color: white;
+            background: rgb(48, 48, 48);
+            padding: 50px;
+            display: flex;
+            justify-content: space-around;
+            .footer_logo{
+                margin: 15px 0 5px 10px;
+            }
+            .footer_logo--text{
+                font-family: "Shrikhand", serif;
+                color: #ffffff;
+                font-weight: normal;
+                font-size: 20px;
+            }
+            .text{
+                display: flex;
+                .icone {
+                    padding-right: 20px;
+                }
+            }
+        }    
+    }
+    
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+    .page {
+        font-size: 18px;
+        header {
+            .logo {
+                text-align: center;
+            }
+            .ville_header {
+                width: 100%;
+                .icone_map {
+                    padding: 0 0px 0 0;
+                }
+            }  
+            nav {
+                .bouton_explorer {
+                    width: 200px;
+                    height: 50px;
+                }
+            }
+        }
+    
+        .fonctionnement {
+            margin: 50px 0 50px 0px;
+            .fonctionnement_bloc {
+                padding-top: 20px;
+                margin-left: 40px;
+                .bloc {
+                    width: 96%;
+                    height: 60px;
+                    .transformation1, .transformation2, .transformation3 {
+                        width: 25px;
+                        height: 25px;
+                    }
+                    .transformation1 {
+                        /*transform: translateX(-20px);*/
+                        position: absolute;
+                        right: 89%;
+                        left: -3%;
+                    }
+                    .transformation2 {
+                        /*transform: translateX(-25px);*/
+                        position: absolute;
+                        right: 89%;
+                        left: -3%;
+                    }
+                    .transformation3 {
+                        /*transform: translateX(-23px);*/
+                        position: absolute;
+                        right: 89%;
+                        left: -3%;
+                    }
+                    .icone {
+                        padding: 10px 0 10px 0px;
+                    }
+                    .text {
+                        padding: 8px;
+                    }
+                .icone {
+                    margin-left: 50px;
+                    margin-right: 10px;
+                    color: gray;
+                }
+                }
+                .bloc:hover {
+                    background: rgb(245, 237, 255);
+                    .icone {
+                        color: rgb(147, 86, 220);
+                    }
+                }
+            }
+            
+        }
+    
+        .restaurants {
+            width: 100%;
+            h1 {
+                margin: 20px 0 10px 20px;
+            }
+            .menu_bloc {
+                margin: 50px 0px 50px 10px;
+                width: 95%;
+                height: 300px;
+                .bloc_nouveau {
+                    position: fixed;
+                    width: 120px;
+                    height: 30px;
+                }
+                img {
+                    border-radius: 30px 30px 0 0;
+                    width: 100%;
+                    height: 70%;
+                }
+                h2 {
+                    padding: 20px 0 0 30px;
+                }
+                .info_image {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding: 0 50px 0 30px;
+                    .bloc_coeur {
+                        position: relative;
+                        right: 10px;
+                        font-size: 1.8rem;
+                        cursor: pointer;
+                        color: #818181;
+                          
+                    }
+                }
+            }
+            .menu_bloc:hover {
+                .bloc_coeur {
+                    font-size: 1.9rem;
+                }
+               
+            }
+        }
+    
+        .bloc_footer {
+            width: 100%;
+            font-size: 20px;
+            color: white;
+            background: rgb(48, 48, 48);
+            padding: 50px; 
+         
+            .text{
+                .icone {
+                    padding-right: 20px;
+                }
+            }
+        }    
+    }
+        
+    }
+    
+
+
+    @media screen and (max-width:600px) {
+        .page .fonctionnement .fonctionnement_bloc .bloc .text{
+            white-space: nowrap; 
+        }
+
+    }
