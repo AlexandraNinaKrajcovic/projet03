@@ -1,0 +1,138 @@
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+    .page {
+        font-size: 18px;
+        header {
+            .logo {
+                text-align: center;
+            }
+            .ville_header {
+                width: 100%;
+                .icone_map {
+                    padding: 0 0px 0 0;
+                }
+            }  
+            nav {
+                .bouton_explorer {
+                    width: 200px;
+                    height: 50px;
+                }
+            }
+        }
+        .content{
+            width: auto;
+        }
+        .fonctionnement {
+            margin: 50px 0 50px 0px;
+            .fonctionnement_bloc {
+                padding-top: 20px;
+                margin-left: 40px;
+                .bloc {
+                    width: 96%;
+                    height: 60px;
+                    .transformation1, .transformation2, .transformation3 {
+                        width: 25px;
+                        height: 25px;
+                    }
+                    .transformation1 {
+                        /*transform: translateX(-20px);*/
+                        position: absolute;
+                        right: 89%;
+                        left: -3%;
+                    }
+                    .transformation2 {
+                        /*transform: translateX(-25px);*/
+                        position: absolute;
+                        right: 89%;
+                        left: -3%;
+                    }
+                    .transformation3 {
+                        /*transform: translateX(-23px);*/
+                        position: absolute;
+                        right: 89%;
+                        left: -3%;
+                    }
+                    .icone {
+                        padding: 10px 0 10px 0px;
+                    }
+                    .text {
+                        padding: 8px;
+                    }
+                .icone {
+                    margin-left: 50px;
+                    margin-right: 10px;
+                    color: gray;
+                }
+                }
+                .bloc:hover {
+                    background: rgb(245, 237, 255);
+                    .icone {
+                        color: rgb(147, 86, 220);
+                    }
+                }
+            }
+            
+        }
+    
+        .restaurants {
+            width: 100%;
+            h1 {
+                margin: 20px 0 10px 20px;
+            }
+            .menu_bloc {
+                margin: 50px 0px 50px 10px;
+                width: 95%;
+                height: 300px;
+                .bloc_nouveau {
+                    width: 120px;
+                    height: 30px;
+                    position: absolute;
+                    right: 5% ;
+                }
+                img {
+                    border-radius: 30px 30px 0 0;
+                    width: 100%;
+                    height: 70%;
+                }
+                h2 {
+                    padding: 20px 0 0 30px;
+                }
+                .info_image {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding: 0 50px 0 30px;
+                    .bloc_coeur {
+                        position: relative;
+                        right: 10px;
+                        font-size: 1.8rem;
+                        cursor: pointer;
+                        color: #818181;
+                          
+                    }
+                }
+            }
+            .menu_bloc:hover {
+                .bloc_coeur {
+                    font-size: 1.9rem;
+                }
+               
+            }
+        }
+    
+        .bloc_footer {
+            width: auto;
+            font-size: 20px;
+            color: white;
+            background: rgb(48, 48, 48);
+            padding: 50px; 
+         
+            .text{
+                .icone {
+                    padding-right: 20px;
+                }
+            }
+        }    
+    }
+        
+    }

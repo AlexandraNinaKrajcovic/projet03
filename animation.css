@@ -1,0 +1,179 @@
+  /*spinner*/
+  .before_spinner {
+    animation: before_spinner 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    background: rgba(10, 10, 10, 0.7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+  }
+
+  .spinner {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 40%;
+    width: 120px;
+    height: 120px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1s linear infinite;
+  }
+
+  .spinner:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 7px solid transparent;
+    border-top-color: #da285e;
+    -webkit-animation: loader 2s linear infinite;
+    -ms-animation: loader 2s linear infinite;
+    animation: loader 2s linear infinite;
+  }
+  
+  .spinner:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 8px solid transparent;
+    border-top-color: #f1eff5;
+    -webkit-animation: loader 1s linear infinite;
+    -ms-animation: loader 1s linear infinite;
+    animation: loader 2s linear infinite;
+  }
+  
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @keyframes before_spinner {
+    100% {
+      opacity: 0;
+      z-index: -10;
+    }
+  }
+
+  /*animations coeur*/
+  .bloc_coeur:hover .coeur2 {
+    font-size: 2rem;
+  }
+
+  .bloc_coeur:hover .coeur3 {
+    font-size: 2.5rem;
+  }
+  
+  
+  .bloc_coeur .coeur2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-48%);
+    bottom: 3px;
+    font-size: 0;
+    background: linear-gradient(#FF79DA, #9356dc);
+    background: -webkit-linear-gradient(#FF79DA, #9356dc);
+    transition: all 0.4s ease-in-out;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: -2px 0px;
+    
+  }
+
+  
+  .bloc_coeur .coeur3 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-48%);
+    bottom: 3px;
+    font-size: 0;
+    background: linear-gradient(#FF79DA, #9356dc);
+    background: -webkit-linear-gradient(#FF79DA, #9356dc);
+    transition: all 0.4s ease-in-out;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 54px 0px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .bloc_coeur .coeur3 {
+      margin: 41px 0px;
+    }
+  }
+
+  
+  /****animation bloc*****/
+  .animation--slip{
+    animation-duration: 1s;
+    animation-name: animation_slip;
+    animation-fill-mode: both;
+    transform: scale(0);
+  }
+  @keyframes animation_slip {
+    from {
+      -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+      transform: scale(0);
+    }
+    to {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  .animation--slip-1 {
+    animation-delay: 0.25s;
+  }
+  
+  .animation--slip-2 {
+    animation-delay: 0.50s;
+  }
+  
+  .animation--slip-3 {
+    animation-delay: 0.75s;
+  }
+  
+  .animation--slip-4 {
+    animation-delay: 1.00s;
+  }
+  
+  .animation--slip-5 {
+    animation-delay: 1.25s;
+  }
+  
+  .animation--slip-6 {
+    animation-delay: 1.50s;
+  }
+  
+  .animation--slip-7 {
+    animation-delay: 1.75s;
+  }
+  
+  .animation--slip-8 {
+    animation-delay: 2.00s;
+  }
+  
+  .animation--slip-9 {
+    animation-delay: 2.25s;
+  }
+  
+  .animation--slip-10 {
+    animation-delay: 2.50s;
+  }
