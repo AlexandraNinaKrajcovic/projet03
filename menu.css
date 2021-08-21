@@ -1,0 +1,533 @@
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+h1, h3, .gras {
+  font-weight: bold;
+}
+
+h1, .coeur, .coeur1 {
+  font-size: 30px;
+  font-family: "Shrikhand", serif;
+}
+
+h2 {
+  font-weight: unset;
+  border-bottom: 3px #99e2d0 solid;
+  width: 40px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header .logo {
+  display: flex;
+}
+header .logo .icone_arrow .fa-arrow-left::before {
+  font-size: 0px;
+}
+header .logo .icone_arrow .arrow {
+  margin: 0 90px 0 20px;
+  padding-top: 60px;
+}
+header .logo img {
+  margin: 20px 0 20px 0;
+  width: 50%;
+}
+header .image_menu {
+  margin-left: 0;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+section {
+  margin-left: 0;
+  margin-top: -50px;
+  padding: 20px;
+  position: relative;
+  border: 1px white solid;
+  border-radius: 50px;
+  background: #f3f3f3;
+}
+section .titre {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px 20px 30px;
+}
+section .titre .bloc_coeur {
+  position: relative;
+  right: -20px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #818181;
+}
+section .titre .coeur {
+  padding-top: 28px;
+}
+section .titre .coeur1 {
+  padding-top: 12px;
+}
+section .bloc {
+  border: 1px white solid;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px gray;
+  height: 60px;
+  line-height: 0px;
+  padding: 10px 20px 10px 10px;
+  margin: 10px 0 20px -10px;
+}
+section .bloc .icone {
+  text-align: center;
+  border: 1px #99e2d0 solid;
+  background-color: #99e2d0;
+  color: white;
+  border-radius: 0 20px 20px 0;
+  width: 70px;
+  height: 80px;
+}
+section .bloc .icone .fa-check-circle::before {
+  font-size: 25px;
+}
+section .bloc .icone .check {
+  padding: 18px 0 0 0;
+}
+section .bloc h3 {
+  font-size: 18px;
+}
+section .bloc .info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+section .bloc .info .gras {
+  position: absolute;
+  margin-right: 20px;
+  left: 90%;
+  transition-duration: 2s;
+  transition-property: left;
+}
+section .bloc .info .caviar {
+  display: inline-block;
+}
+section .bloc .info .point {
+  display: none;
+}
+section .bloc:hover .icone {
+  margin-right: -30px;
+}
+section .bloc:hover .point {
+  display: inline-block;
+}
+section .bloc:hover .caviar {
+  display: none;
+}
+section .bloc:hover .gras {
+  left: 70%;
+}
+section button {
+  font-size: 20px;
+  /*margin: 30px 0 100px 20%;*/
+  border: 1px white solid;
+  border-radius: 50px;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  color: white;
+  width: 180px;
+  height: 50px;
+  transition: all 0.5s ease-out;
+}
+section .order-button:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  background-blend-mode: lighten;
+  background-color: #b389e7;
+  cursor: pointer;
+}
+
+.bloc_footer {
+  position: relative;
+  margin: -40px 0px 0 0px;
+  font-size: 20px;
+  color: white;
+  background: #303030;
+  padding: 30px;
+}
+.bloc_footer .footer_logo {
+  color: white;
+  font-family: "Shrikhand", "cursive";
+}
+.bloc_footer .text {
+  display: flex;
+}
+.bloc_footer .text .icone {
+  width: 10px;
+  margin: -10px 20px 0px 0;
+}
+
+.bloc_menu .entrees, .bloc_menu .plats, .bloc_menu .desserts {
+  width: 100%;
+  justify-content: center;
+}
+
+.commander {
+  display: flex;
+  justify-content: center;
+  margin: 3% 0 10% 0;
+}
+
+/****PLUS DE 1080 PX****/
+@media screen and (min-width: 1024px) {
+  h1, .coeur, .coeur1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    width: 40px;
+    font-size: 25px;
+  }
+
+  header .logo {
+    display: flex;
+  }
+  header .logo .icone_arrow .fa-arrow-left::before {
+    font-size: 30px;
+  }
+  header .logo .icone_arrow .arrow {
+    margin: 0 580px 0 30px;
+    padding-top: 25px;
+  }
+  header .logo img {
+    margin: 20px 0 20px 0;
+    width: 15%;
+  }
+  header .image_menu {
+    margin: 0 0 0 0px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  section {
+    margin: -50px auto;
+    padding: 20px 0 0 20px;
+    width: auto;
+    position: relative;
+    border: 1px white solid;
+    border-radius: 50px;
+    background: #f3f3f3;
+  }
+  section .bloc_menu {
+    display: flex;
+  }
+  section .titre {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px 20px 30px;
+  }
+  section .titre .coeur {
+    padding-top: 28px;
+  }
+  section .titre .coeur1 {
+    padding-top: 12px;
+  }
+  section .bloc {
+    border: 1px white solid;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px gray;
+    width: 80%;
+    height: 50px;
+    line-height: 0px;
+    padding: 0px 30px 20px 10px;
+    margin: 0px 20px 50px 10px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  section .bloc .icone {
+    text-align: center;
+    border: 1px #99e2d0 solid;
+    background-color: #99e2d0;
+    color: white;
+    border-radius: 0 20px 20px 0;
+    width: 70px;
+    height: 70px;
+    margin-top: -36px;
+    margin-right: -103px;
+    transition-duration: 2s, 3s;
+    transition-property: margin-right, left;
+  }
+  section .bloc .icone .fa-check-circle::before {
+    font-size: 30px;
+  }
+  section .bloc .icone .check {
+    padding: 5px 0 0 0;
+  }
+  section .bloc h3 {
+    font-size: 16px;
+  }
+  section .bloc .info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+  }
+  section .bloc .info .gras {
+    /* position: relative;*/
+    margin-right: -10px;
+    margin-top: 0px;
+  }
+  section .bloc .info .caviar {
+    display: inline-block;
+  }
+  section .bloc .info .point {
+    display: none;
+  }
+  section .bloc .info p {
+    font-size: 16px;
+  }
+  section .bloc:hover .icone {
+    margin-right: -30px;
+  }
+  section .bloc:hover .gras {
+    left: 70%;
+  }
+  section .bloc:hover .point {
+    display: inline-block;
+  }
+  section .bloc:hover .caviar {
+    display: none;
+  }
+  section .bloc:hover .gras {
+    left: 70%;
+  }
+  section button {
+    font-size: 20px;
+    /* margin: 30px 0 100px 550px;*/
+    border: 1px white solid;
+    border-radius: 50px;
+    background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+    color: white;
+    width: 200px;
+    height: 55px;
+  }
+
+  .bloc_footer {
+    width: auto;
+    font-size: 20px;
+    color: white;
+    background: #303030;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .bloc_footer .footer_logo {
+    margin: 15px 0 5px 10px;
+  }
+  .bloc_footer .footer_logo--text {
+    font-family: "Shrikhand", serif;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 20px;
+  }
+  .bloc_footer .text {
+    display: flex;
+  }
+  .bloc_footer .text .icone {
+    padding-right: 20px;
+  }
+}
+/****ENTRE 600 PX JUSQU' A 1024 PX*****/
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  h1, .coeur, .coeur1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  header .logo .icone_arrow .fa-arrow-left::before {
+    font-size: 25px;
+  }
+  header .logo .icone_arrow .arrow {
+    margin: 0 190px 0 40px;
+    padding-top: 40px;
+  }
+  header .logo img {
+    width: 40%;
+  }
+  header .image_menu {
+    margin-left: 0;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  section {
+    margin-left: 0;
+    padding: 20px;
+    width: 94%;
+    margin-top: -50px;
+  }
+  section .bloc {
+    border-radius: 20px;
+    width: auto;
+    height: 80px;
+    padding: 5px 20px 15px 20px;
+    margin: 0px 0 20px 45px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  section .bloc .icone {
+    border-radius: 0 20px 20px 0;
+    width: 110px;
+    height: 100px;
+    margin: -56px -132px 0 0;
+    transition-duration: 2s, 3s;
+    transition-property: margin-right, left;
+  }
+  section .bloc .icone .fa-check-circle::before {
+    font-size: 40px;
+  }
+  section .bloc .icone .check {
+    padding: 10px 0 0 0;
+  }
+  section .bloc h3 {
+    font-size: 25px;
+  }
+  section .bloc .info {
+    font-size: 20px;
+  }
+  section .bloc .info .gras {
+    margin-left: 20px;
+  }
+  section .bloc:hover .gras {
+    left: 70%;
+  }
+  section button {
+    /* margin: 10% 0 20% 22%;*/
+    width: 250px;
+    height: 70px;
+  }
+
+  .bloc_footer {
+    width: 91%;
+    margin: -40px 0 0 0;
+    font-size: 20px;
+    padding: 30px;
+  }
+  .bloc_footer .footer_logo--text {
+    font-family: "Shrikhand", serif;
+  }
+  .bloc_footer .text {
+    display: flex;
+  }
+  .bloc_footer .text .icone {
+    padding-right: 20px;
+  }
+}
+/*****MOINS DE 600PX**********/
+@media screen and (max-width: 600px) {
+  h1, .coeur, .coeur1 {
+    font-size: 15px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  section .bloc h3 {
+    font-size: 15px;
+  }
+
+  header .logo .icone_arrow .fa-arrow-left::before {
+    font-size: 25px;
+  }
+  header .logo .icone_arrow .arrow {
+    margin: 0 190px 0 40px;
+    padding-top: 40px;
+  }
+  header .logo img {
+    width: 40%;
+  }
+  header .image_menu {
+    margin-left: 0;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  section {
+    margin-left: 0;
+    padding: 20px;
+    width: 94%;
+    margin-top: -50px;
+    width: auto;
+  }
+  section .bloc {
+    border-radius: 20px;
+    width: auto;
+    height: 80px;
+    padding: 5px 20px 15px 20px;
+    margin: 0px 0 20px 45px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  section .bloc .icone {
+    border-radius: 0 20px 20px 0;
+    width: 110px;
+    height: 100px;
+    margin: -45px -132px 0 0;
+    transition-duration: 2s, 3s;
+    transition-property: margin-right, left;
+  }
+  section .bloc .icone .fa-check-circle::before {
+    font-size: 40px;
+  }
+  section .bloc .icone .check {
+    padding: 10px 0 0 0;
+  }
+  section .bloc h3 {
+    font-size: 20px;
+  }
+  section .bloc .info {
+    font-size: 20px;
+  }
+  section .bloc .info .gras {
+    position: absolute;
+    margin-right: 20px;
+    left: 87%;
+    transition-duration: 2s;
+    transition-property: left;
+  }
+  section .bloc:hover .gras {
+    left: 70%;
+  }
+  section button {
+    /*   margin: 10% 0 20% 22%;*/
+    width: 250px;
+    height: 70px;
+  }
+
+  .bloc_footer {
+    width: auto;
+    margin: -40px 0 0 0;
+    font-size: 20px;
+    padding: 30px;
+  }
+  .bloc_footer .footer_logo--text {
+    font-family: "Shrikhand", serif;
+  }
+  .bloc_footer .text {
+    display: flex;
+  }
+  .bloc_footer .text .icone {
+    padding-right: 20px;
+  }
+}
+
+/*# sourceMappingURL=menu.css.map */
