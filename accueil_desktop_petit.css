@@ -119,6 +119,10 @@
   .page .bloc_footer .text .icone {
     padding-right: 20px;
   }
+  .page .bloc_footer .footer_item p a {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 /*# sourceMappingURL=accueil_desktop_petit.css.map */
