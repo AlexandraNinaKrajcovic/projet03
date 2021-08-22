@@ -168,6 +168,10 @@ section .order-button:hover {
   width: 10px;
   margin: -10px 20px 0px 0;
 }
+.bloc_footer .footer_item p a {
+  color: white;
+  text-decoration: none;
+}
 
 .bloc_menu .entrees, .bloc_menu .plats, .bloc_menu .desserts {
   width: 100%;
@@ -339,6 +343,10 @@ section .order-button:hover {
   .bloc_footer .text .icone {
     padding-right: 20px;
   }
+  .bloc_footer .footer_item p a {
+    color: white;
+    text-decoration: none;
+  }
 }
 /****ENTRE 600 PX JUSQU' A 1024 PX*****/
 @media screen and (min-width: 600px) and (max-width: 1024px) {
@@ -428,6 +436,10 @@ section .order-button:hover {
   }
   .bloc_footer .text .icone {
     padding-right: 20px;
+  }
+  .bloc_footer .footer_item p a {
+    color: white;
+    text-decoration: none;
   }
 }
 /*****MOINS DE 600PX**********/
@@ -527,6 +539,10 @@ section .order-button:hover {
   }
   .bloc_footer .text .icone {
     padding-right: 20px;
+  }
+  .bloc_footer .footer_item p a {
+    color: white;
+    text-decoration: none;
   }
 }
 

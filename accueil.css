@@ -207,6 +207,10 @@
 .page .bloc_footer .text .icone {
   padding-right: 20px;
 }
+.page .bloc_footer .footer_item p a {
+  color: white;
+  text-decoration: none;
+}
 
 @media screen and (min-width: 1024px) {
   .page {
@@ -327,6 +331,10 @@
   .page .bloc_footer .text .icone {
     padding-right: 20px;
   }
+  .page .bloc_footer .footer_item p a {
+    color: white;
+    text-decoration: none;
+  }
 }
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   .page {
@@ -444,6 +452,10 @@
   }
   .page .bloc_footer .text .icone {
     padding-right: 20px;
+  }
+  .page .bloc_footer .footer_item p a {
+    color: white;
+    text-decoration: none;
   }
 }
 @media screen and (max-width: 600px) {
