@@ -1,10 +1,19 @@
 @media screen and (max-width: 600px) {
+  .logo img {
+    width: 70%;
+  }
+
   .page .fonctionnement .fonctionnement_bloc .bloc .text {
     white-space: nowrap;
   }
 
   .page .fonctionnement .fonctionnement_bloc .bloc1 .text {
     white-space: nowrap;
+  }
+
+  .footer_item p a {
+    color: white;
+    text-decoration: none;
   }
 }
 
