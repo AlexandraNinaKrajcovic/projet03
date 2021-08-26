@@ -166,7 +166,7 @@ section .order-button:hover {
 }
 .bloc_footer .text .icone {
   width: 10px;
-  margin: -10px 20px 0px 0;
+  margin: -10px -4px 0px 0;
 }
 .bloc_footer .footer_item p a {
   color: white;
